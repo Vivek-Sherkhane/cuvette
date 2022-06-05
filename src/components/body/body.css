@@ -1,0 +1,180 @@
+.body {
+  padding: 2%;
+  grid-area: body;
+  display: grid;
+  grid-template-areas:
+    "heading heading"
+    "skill syllabusAnalysis"
+    "statistics syllabusAnalysis"
+    "graph syllabusAnalysis"
+    "graph questionAnalysis";
+  grid-template-rows: 2rem 10rem 13rem 1fr 3fr;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2%;
+  height: 100%;
+  /* box-sizing: border-box; */
+}
+
+.bodyHeading {
+  grid-area: heading;
+}
+
+.bodyHeading h2 {
+  margin-top: 0;
+}
+.skill {
+  grid-area: skill;
+}
+
+.skill,
+.statistics,
+.graphContainer,
+.syllabusAnalysisContainer,
+.questionAnalysisContainer {
+  padding: 1% 3%;
+  border: 1px solid #ebf0f5;
+  border-radius: 8px;
+}
+
+.description {
+  height: 100%;
+}
+
+img.small {
+  max-width: 5rem;
+}
+.details {
+  margin-left: 1.2rem;
+}
+
+.details p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 180%;
+  color: #566474;
+}
+
+button {
+  padding: 1rem 3rem;
+  border: 0.1rem #a4a4a4 solid;
+  border-radius: 0.5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background-color: #142683;
+  color: white;
+  width: fit-content;
+}
+
+.statistics {
+  grid-area: statistics;
+}
+
+.statsData p {
+  margin: 0;
+}
+
+.statsContainer {
+  margin-top: 2%;
+}
+
+.statsItem {
+  display: flex;
+  align-items: center;
+}
+
+.imageSpan {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: #f7f8fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+}
+
+.statsData strong {
+  color: #1e272e;
+  font-weight: 700;
+}
+
+.statsData p {
+  font-weight: 400;
+  color: #9eaab7;
+}
+
+/*Graph CSS starts here*/
+
+.graphContainer {
+  grid-area: graph;
+}
+
+.graphTop {
+  height: 20%;
+}
+
+.graphText {
+  max-width: 65%;
+  color: #566474;
+  font-size: 1.4rem;
+}
+
+.graphBottom {
+  height: 70%;
+  margin: 3% 1% 1% 0;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ebf0f5;
+  border-radius: 8px;
+}
+
+/* syllabus analysis CSS starts here*/
+
+.syllabusAnalysisContainer {
+  grid-area: syllabusAnalysis;
+  box-sizing: border-box;
+}
+
+.syllabusAnalysisContainer > h2 {
+  font-weight: 700;
+  height: 7%;
+  margin-bottom: 0;
+}
+
+.syllabusWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90%;
+}
+
+/* question analysis CSS starts here */
+
+.questionAnalysisContainer {
+  grid-area: questionAnalysis;
+}
+
+.questionAnalysisHeading {
+  height: 10%;
+}
+
+.questionAnalysisText {
+  height: 15%;
+  font-size: 1.28rem;
+  font-weight: 400;
+  color: #566474;
+  margin: 1% 0;
+}
+
+.questionAnalysisProgress {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+/**/

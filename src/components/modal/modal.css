@@ -1,0 +1,98 @@
+.modalBox {
+  display: grid;
+  grid-template-areas:
+    "top"
+    "center"
+    "bottom";
+  grid-template-rows: 8rem 2fr 8rem;
+  grid-template-columns: 1fr;
+  padding: 2% 2% 1% 2%;
+}
+
+.top {
+  grid-area: top;
+  border-bottom: 1px solid #ebf0f5;
+  align-items: flex-start;
+}
+
+.top > h1 {
+  font-weight: 700;
+  color: #222f3e;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.top > img {
+  height: 60%;
+}
+
+.center {
+  grid-area: center;
+  border-bottom: 1px solid #ebf0f5;
+  padding: 2% 0;
+}
+
+.centerWrapper {
+  height: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.inputItem {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+}
+
+.inputItemText {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.index {
+  margin-right: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #142683;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.inputItem > input {
+  border: 1px solid #142683;
+  padding: 1% 2%;
+  height: 1.5rem;
+  outline: none;
+  border-radius: 5px;
+  color: #142683;
+  font-weight: 700;
+  font-size: 1.5rem;
+  max-width: 16%;
+  height: 2.5rem;
+}
+
+.bottom {
+  grid-area: bottom;
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bottom > Button {
+  height: 50%;
+  margin: 0 2%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}

@@ -1,0 +1,28 @@
+.sidebar {
+  grid-area: sidebar;
+  padding-top: 5rem;
+  border-right: 1px solid #ebf0f5;
+  box-sizing: border-box;
+  position: fixed;
+  width: 20rem;
+  height: inherit;
+}
+
+.sidebarItem {
+  display: flex;
+  align-items: center;
+  margin: 0 6% 4% 0;
+  padding: 0 10%;
+  cursor: pointer;
+}
+
+.sidebarItem:hover {
+  background-color: #f7f8fa;
+  border-radius: 0 25px 25px 0;
+}
+
+.active {
+  background-color: #f7f8fa;
+  color: #445ee2;
+  border-radius: 0 25px 25px 0;
+}

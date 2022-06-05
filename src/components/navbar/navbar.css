@@ -1,0 +1,21 @@
+.navbar {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 1rem 2rem;
+}
+
+.profile {
+  box-sizing: border-box;
+  height: 100%;
+  border: 1px solid #ebf0f5;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.profile img {
+  margin-right: 0.7rem;
+}
+
+.profile p {
+  margin: 0;
+}
